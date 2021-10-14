@@ -9,6 +9,7 @@
 sudo true
 
 # Install dialog
+echo 'deb http://archive.ubuntu.com/ubuntu bionic main universe' | sudo tee -a /etc/apt/sources.list > /dev/null
 sudo apt update
 sudo apt install -y dialog
 
