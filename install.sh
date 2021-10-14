@@ -8,6 +8,9 @@
 # Script only works if sudo caches the password for a few minutes
 sudo true
 
+# Install dialog
+sudo apt install -y dialog
+
 # Install Docker
 wget -qO- https://get.docker.com/ | sh
 
@@ -27,4 +30,4 @@ sudo chmod +x /usr/local/bin/docker-cleanup
 # Add user to docker group to run without sudo
 sudo usermod -aG docker $USER
 
-dialog --backtitle "Auto Install Docker and Docker-Compose" --title "Sucesso!" --clear --msgbox "Instalação concluida com sucesso!" 8 40
+dialog --backtitle "Auto Install Docker and Docker-Compose" --title "Sucesso" --clear --msgbox "Instalação concluida com sucesso." 8 40
