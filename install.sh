@@ -32,4 +32,4 @@ sudo chmod +x /usr/local/bin/docker-cleanup
 # Add user to docker group to run without sudo
 sudo usermod -aG docker $USER
 
-dialog --backtitle "Auto Install Docker and Docker-Compose" --title "Sucesso" --clear --msgbox "Instalação concluida com sucesso." 8 40
+dialog --backtitle "Auto Install Docker and Docker-Compose" --title "Sucesso" --clear --msgbox "Docker e docker-compose instalados com sucesso. Faça o logoff e login novamente para usar!" 8 40
