@@ -9,6 +9,7 @@
 sudo true
 
 # Install dialog
+sudo apt update
 sudo apt install -y dialog
 
 # Install Docker
